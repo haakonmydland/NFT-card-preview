@@ -1,0 +1,97 @@
+.card {
+  background-color: var(--Very-dark-blue-card);
+  color: var(--Soft-blue);
+  font-size: var(--Font-size);
+  max-width: 300px;
+  padding: var(--lg);
+  border-radius: 1rem;
+  cursor: default;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.438);
+}
+a {
+  cursor: pointer;
+  transition: color 150ms ease-in-out;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: hsl(var(--Cyan));
+}
+
+.image {
+  width: 100%;
+}
+.imageHover {
+  aspect-ratio: 1;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.imageHoverOverlay {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: hsla(var(--Cyan), 0);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 150ms ease-in-out, opacity 150ms ease-in-out;
+}
+.imageHover:hover .imageHoverOverlay {
+  opacity: 1;
+  background-color: hsla(var(--Cyan), 0.5);
+}
+
+.text > h1 {
+  font-size: var(--lg);
+  font-weight: var(--Font-600);
+  color: var(--White);
+}
+
+.text > p {
+  font-size: var(--Font-size);
+  font-weight: var(--Font-300);
+  margin: 0;
+}
+
+.info {
+  display: flex;
+  padding: var(--lg) 0;
+  justify-content: space-between;
+}
+.price {
+  gap: var(--sm);
+  display: flex;
+  align-items: center;
+  color: hsl(var(--Cyan));
+}
+
+.time {
+  gap: var(--sm);
+  display: flex;
+  align-items: center;
+}
+
+.creator {
+  height: var(--xl);
+  align-items: center;
+  display: flex;
+  border-top: solid 1px var(--Very-dark-blue-line);
+  padding-top: var(--lg);
+  gap: var(--md);
+  font-weight: var(--Font-300);
+}
+.creator img {
+  height: 80%;
+  border: 1px solid var(--White);
+  border-radius: 100%;
+}
+.creator a {
+  color: var(--White);
+}
+
+.creator a:hover {
+  color: hsl(var(--Cyan));
+}
