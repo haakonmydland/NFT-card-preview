@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](Screenshot 2022-11-16 at 15-14-47 Vite React.png)
+![]("./Screenshot 2022-11-16 at 15-14-47 Vite React.png")
 
 ### Links
 
