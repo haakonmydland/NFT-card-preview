@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+cd "nft-card"
+
 # abort on errors
 set -e
 
